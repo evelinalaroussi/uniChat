@@ -1,0 +1,354 @@
+/* BTW, is Material Icons legature working for you all? I saw it wasn't working properly on a screenshot I saw on twitter. */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+
+.course {
+  width:300px;
+  margin-left:25%;
+}
+
+#add {
+  margin-left:50%;
+}
+
+#courseSelector {
+      text-decoration: none;
+      color:  #6b6166;
+      font-size: 20px;
+      font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+      font-style: italic;
+
+
+}
+
+.chatBox {
+  height: 600px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255,0.3);
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: scroll;
+  width:96%;
+  text-align:left;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;;
+  color: #333;
+  background: #595959;
+  display: block;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background-image: url("http://www.csc.kth.se/utbildning/program/sc/DSCN1239.JPG");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+header {
+  background: #fff;
+  border-bottom-color: #eee;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+h1 { 
+  color: #ffb3d9;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;;
+  font-style: italic;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 180px;
+  margin: 0 0 12px; 
+  text-align: center; }
+
+.school { 
+  border-top: 1px solid #fff;
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px; }
+
+
+.school span { 
+  color: #6b6166; 
+  text-decoration: none;
+  font-style: italic;
+  font-size: 20px; 
+  text-align: center; 
+  padding: 2px 5px; 
+  background: #fff; 
+  width: 200px; 
+  margin: 0 auto; 
+  display: block; 
+  position: relative; 
+  top: -11px;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;;
+  border-radius: 25px;
+}
+
+h2,
+h3 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;;
+  font-style: italic;
+  margin: 0 0 12px;
+  line-height: 50px;
+  color: #ffb3d9;
+}
+
+header {
+  font-size: 3.4em;
+  line-height: 1.6em;
+  text-align: center;
+  font-weight: normal;
+  color: #ff4da6;
+}
+
+input[type=text],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 1em;
+  padding: .7em 1em;
+  margin-bottom: 1em;
+  position: relative;
+  top: 15px;
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;;
+  font-style: italic;
+}
+
+input[type=text] {
+  margin-left: 85px;
+  width: calc(100% - 225px);
+  border-radius: 100px;
+}
+
+.rounded.button {
+  border: none;
+  border-radius: 100px;
+  background:#fff;
+  color:  #6b6166;
+  text-align: center;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-weight: 600;
+}
+a>button.rounded.button {
+  width:25%;
+  margin-bottom:20px;
+}
+
+.bubble {
+  position: relative;
+  background-color:#eee;
+  margin: 20px;
+  padding:10px;
+  text-align:center;
+  width:450px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  margin-left: 25%;
+}
+.bubble:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: #eee transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:-19px;
+  left:1em;
+}
+
+#chat {
+  height: 85px;
+  position: relative;
+}
+
+#chat i {
+  font-size: 75px;
+  position: absolute;
+}
+
+#main {
+  margin: 2em 1em 1em;
+}
+
+#main > h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+#main > p {
+  color: #ce1126;
+}
+
+#output p {
+  font-size: 1.2em;
+  margin: 0.6em;
+  position: relative;
+}
+
+#output i {
+  font-size: 40px;
+  position: absolute;
+  top: -5px;
+}
+
+#output i + span {
+  position: relative;
+  margin-left: 40px;
+}
+
+#welcomepage {
+  text-align: center;
+}
+
+/* Font Icons */
+
+[class^="face"],
+[class*=" face"] {
+  font-family: 'Material Icons';
+  speak: none;
+  margin-right:10px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.face-1:before {
+  content: "face";
+}
+
+.face-2:before {
+  content: "favorite";
+}
+
+.face-3:before {
+  content: "adb";
+}
+
+.face-4:before {
+  content: "cake";
+}
+
+.face-5:before {
+  content: "whatshot";
+}
+
+.face-6:before {
+  content: "invert_colors";
+}
+
+.face-7:before {
+  content: "stars";
+}
+
+.face-8:before {
+  content: "mood_bad";
+}
+
+.face-9:before {
+  content: "mood";
+}
+
+.face-10:before {
+  content: "star";
+}
+
+.face-11:before {
+  content: "directions_bike";
+}
+
+.face-12:before {
+  content: "star_half";
+}
+
+.face-13:before {
+  content: "school";
+}
+
+.color-1 {
+  color: #393b79;
+}
+
+.color-2 {
+  color: #6b6ecf;
+}
+
+.color-3 {
+  color: #637939;
+}
+
+.color-4 {
+  color: #b5cf6b;
+}
+
+.color-5 {
+  color: #8c6d31;
+}
+
+.color-6 {
+  color: #e7ba52;
+}
+
+.color-7 {
+  color: #843c39;
+}
+
+.color-8 {
+  color: #d6616b;
+}
+
+.color-9 {
+  color: #7b4173;
+}
+
+.color-10 {
+  color: #ce6dbd;
+}
